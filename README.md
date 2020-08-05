@@ -9,6 +9,7 @@ Repositório responsável pelo workshops de MEAN & Serverless.
 Durante esse workshop você aprenderá a realizar a migração de uma maneira simples, rápida e dinâmica uma aplicação MEAN para uma arquitetura Serverless, fazendo uso do Azure Functions!
 
 Os dados do Funcionário consiste em:
+mais um teste
 
 **Classe: Funcionario**
 
@@ -51,7 +52,7 @@ Para a realização dos workshops de React.js, se faz necessário ter noções d
 
 1) Instalar os pacotes com o comando: (dentro da pasta `front`)
 
-``` 
+```
 > npm install
 ```
 
@@ -69,7 +70,7 @@ Antes de iniciar os passos abaixo é muito importante que você execute nesse mo
 
 1) Instalar os pacotes com o comando: (dentro da pasta `api`)
 
-``` 
+```
 > npm install
 ```
 
@@ -130,7 +131,7 @@ E ele irá listar todos os endpoints criados e necessários para persistir junta
 
 6. Ao entrar no arquivo `funcionario.service.ts`, basta alterar a uri para: `http://localhost:7071/api`
 
-7. Execute o projeto Angular com o comando: 
+7. Execute o projeto Angular com o comando:
 
 ```bash
 > ng server -o
@@ -181,7 +182,7 @@ E ele irá listar todos os endpoints criados e necessários para persistir junta
 
 6. Ao entrar no arquivo `funcionario.service.ts`, basta alterar a uri para: `http://localhost:7071/api`
 
-7. Execute o projeto Angular com o comando: 
+7. Execute o projeto Angular com o comando:
 
 ```bash
 > ng server -o
@@ -211,7 +212,7 @@ O processo de migração dos dados localmente persistidos pelo MongoDb para o Co
 
 4. Passo: agora vamos importar os dados localmente do MongoDb para o CosmosDb. Para isso, bastam abrir o MongoDb Compass e clicar em export file e salvar num local onde você deseja.
 
-5. Passo: agora vamos executar o seguinte comando abaixo. Esse comando será responsável por migrar o arquivo criado no passo anterior para enviar para o CosmosDb. 
+5. Passo: agora vamos executar o seguinte comando abaixo. Esse comando será responsável por migrar o arquivo criado no passo anterior para enviar para o CosmosDb.
 
 ```bash
 > mongoimport.exe --host crud--serverless-<inclua-seu-nome>.documents.azure.com:10255 -u crud--serverless-<inclua-seu-nome> -p <primary-key-criada-cosmosdb> --ssl --sslAllowInvalidCertificates --db crud--serverless-<inclua-seu-nome> --collection funcionarios --file funcionarios.json
@@ -230,7 +231,7 @@ Mas antes, vá até a pasta `front` e execute o seguinte o seguinte comando:
 
 Esse comando irá gerar uma pasta chamada `dist`. E é justamente essa pasta que precisaremos para realizar o deploy da nossa aplicação MEAN ao Azure.
 
-1. Execute o seguinte comando dentro da pasta `dist` com o seguinte comando: 
+1. Execute o seguinte comando dentro da pasta `dist` com o seguinte comando:
 
 ```bash
 > az webapp up -n <nombre-de-la-app>
